@@ -1,0 +1,11 @@
+package surname;
+
+public enum Case {
+	MIANOWNIK,
+	DOPELNIACZ,
+	CELOWNIK,
+	BIERNIK,
+	NARZEDNIK,
+	MIEJSCOWNIK,
+	WOLACZ
+}
