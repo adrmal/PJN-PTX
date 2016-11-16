@@ -9,7 +9,20 @@ public class SurnamesDatabase {
 	
 	static {
 		suffixes.add(new Suffix(new String[] { "ski", "skiego", "skiemu", "skiego", "skim", "skim", "ski" }));
+		suffixes.add(new Suffix(new String[] { "ska", "skiej", "skiej", "ską", "ską", "skiej", "ska" }));
 		suffixes.add(new Suffix(new String[] { "ak", "aka", "akowi", "aka", "akiem", "aku", "aku" }));
+		suffixes.add(new Suffix(new String[] { "niek", "ńka", "ńkowi", "ńka", "ńkiem", "ńku", "ńku" }));
+		suffixes.add(new Suffix(new String[] { "ek", "ka", "kowi", "ka", "kiem", "ku", "ku" }));
+		suffixes.add(new Suffix(new String[] { "yk", "yka", "ykowi", "yka", "ykiem", "yku", "yku" }));
+		suffixes.add(new Suffix(new String[] { "ik", "ika", "ikowi", "ika", "ikiem", "iku", "iku" }));
+		suffixes.add(new Suffix(new String[] { "cki", "ckiego", "ckiemu", "ckiego", "ckim", "ckim", "cki" }));
+		suffixes.add(new Suffix(new String[] { "cka", "ckiej", "ckiej", "cką", "cką", "ckiej", "cka" }));
+		suffixes.add(new Suffix(new String[] { "ła", "ły", "le", "łę", "łą", "le", "ło" }));
+		suffixes.add(new Suffix(new String[] { "ra", "ry", "rze", "rę", "rą", "rze", "ro" }));
+		suffixes.add(new Suffix(new String[] { "ke", "kego", "kemu", "kego", "kem", "kem", "ke" }));
+		suffixes.add(new Suffix(new String[] { "ko", "ki", "ce", "kę", "ką", "ce", "ko" }));
+		suffixes.add(new Suffix(new String[] { "h", "ha", "howi", "ha", "hem", "hu", "hu" }));
+		suffixes.add(new Suffix(new String[] { "cz", "cza", "czowi", "cza", "czem", "czu", "czu" }));
 	}
 	
 }

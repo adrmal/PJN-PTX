@@ -5,18 +5,14 @@ import java.util.List;
 
 public class Suffix {
 
-	private List<String> casesOfSuffix;
+	private List<String> suffixCases;
 	
-	public Suffix(String... casesOfSuffix) {
-		this.casesOfSuffix = Arrays.asList(casesOfSuffix);
+	public Suffix(String... suffixCases) {
+		this.suffixCases = Arrays.asList(suffixCases);
 	}
 	
-	public String getCase(int index) {
-		return casesOfSuffix.get(index);
-	}
-	
-	public String getCase(Case grammaticalCase) {
-		return casesOfSuffix.get(grammaticalCase.ordinal());
+	public String getSuffixInCase(Case grammaticalCase) {
+		return suffixCases.get(grammaticalCase.ordinal());
 	}
 	
 }
