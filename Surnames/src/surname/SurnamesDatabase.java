@@ -23,6 +23,11 @@ public class SurnamesDatabase {
 		suffixes.add(new Suffix(new String[] { "ko", "ki", "ce", "kę", "ką", "ce", "ko" }));
 		suffixes.add(new Suffix(new String[] { "h", "ha", "howi", "ha", "hem", "hu", "hu" }));
 		suffixes.add(new Suffix(new String[] { "cz", "cza", "czowi", "cza", "czem", "czu", "czu" }));
+		suffixes.add(new Suffix(new String[] { "r", "ra", "rowi", "ra", "rem", "rze", "rze" }));
+		suffixes.add(new Suffix(new String[] { "niec", "ńca", "ńcowi", "ńca", "ńcem", "ńcu", "ńcu" }));
+		suffixes.add(new Suffix(new String[] { "iec", "ca", "cowi", "ca", "cem", "cu", "cu" }));
+		suffixes.add(new Suffix(new String[] { "ec", "ca", "cowi", "ca", "cem", "cu", "cu" }));
+		suffixes.add(new Suffix(new String[] { "c", "ca", "cowi", "ca", "cem", "cu", "cu" }));
 	}
 	
 }
