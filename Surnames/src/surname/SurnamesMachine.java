@@ -14,7 +14,7 @@ public class SurnamesMachine {
 	
 	public static String getSurnameInCase(String surname, Case grammaticalCase) {
 		for(Suffix suffix : SurnamesDatabase.suffixes) {
-			Pattern surnamePattern = Pattern.compile("([A-Za-zAĆĘŁŃÓŚŹŻąćęłńóśźż]*)" + suffix.getSuffixInCase(Case.MIANOWNIK));
+			Pattern surnamePattern = Pattern.compile("(\\p{L}*|\\p{L}*-\\p{L}*)" + suffix.getSuffixInCase(Case.MIANOWNIK));
 			Matcher matcher = surnamePattern.matcher(surname);
 			if(matcher.matches()) {
 				return matcher.group(1) + suffix.getSuffixInCase(grammaticalCase);
