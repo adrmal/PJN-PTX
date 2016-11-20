@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+<category>
+	<pattern>HOW OLD ARE YOU</pattern>
+	<template>I'M 5 YEARS OLD.</template>
+</category>
+<category>
+	<pattern>HOW OLD ARE YOU *</pattern>
+	<template><srai>HOW OLD ARE YOU</srai></template>
+</category>
+<category>
+	<pattern>*</pattern>
+	<template>I DON'T UNDERSTAND.</template>
+</category>
+</aiml>
