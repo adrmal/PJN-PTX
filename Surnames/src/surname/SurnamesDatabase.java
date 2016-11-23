@@ -10,13 +10,12 @@ public class SurnamesDatabase {
 	static {
 		suffixes.add(new Suffix(new String[] { "ski", "skiego", "skiemu", "skiego", "skim", "skim", "ski" }));
 		suffixes.add(new Suffix(new String[] { "ska", "skiej", "skiej", "ską", "ską", "skiej", "ska" }));
-		suffixes.add(new Suffix(new String[] { "ak", "aka", "akowi", "aka", "akiem", "aku", "aku" }));
 		suffixes.add(new Suffix(new String[] { "niek", "ńka", "ńkowi", "ńka", "ńkiem", "ńku", "ńku" }));
 		suffixes.add(new Suffix(new String[] { "ek", "ka", "kowi", "ka", "kiem", "ku", "ku" }));
-		suffixes.add(new Suffix(new String[] { "yk", "yka", "ykowi", "yka", "ykiem", "yku", "yku" }));
-		suffixes.add(new Suffix(new String[] { "ik", "ika", "ikowi", "ika", "ikiem", "iku", "iku" }));
+		suffixes.add(new Suffix(new String[] { "k", "ka", "kowi", "ka", "kiem", "ku", "ku" }));
 		suffixes.add(new Suffix(new String[] { "cki", "ckiego", "ckiemu", "ckiego", "ckim", "ckim", "cki" }));
 		suffixes.add(new Suffix(new String[] { "cka", "ckiej", "ckiej", "cką", "cką", "ckiej", "cka" }));
+		suffixes.add(new Suffix(new String[] { "ka", "ki", "ce", "kę", "ką", "ce", "ko" }));
 		suffixes.add(new Suffix(new String[] { "ła", "ły", "le", "łę", "łą", "le", "ło" }));
 		suffixes.add(new Suffix(new String[] { "ra", "ry", "rze", "rę", "rą", "rze", "ro" }));
 		suffixes.add(new Suffix(new String[] { "ke", "kego", "kemu", "kego", "kem", "kem", "ke" }));
@@ -33,6 +32,25 @@ public class SurnamesDatabase {
 		suffixes.add(new Suffix(new String[] { "da", "dy", "dzie", "dę", "dą", "dzie", "do" }));
 		suffixes.add(new Suffix(new String[] { "n", "na", "nowi", "na", "nem", "nie", "nie" }));
 		suffixes.add(new Suffix(new String[] { "ś", "sia", "siowi", "sia", "siem", "siu", "siu" }));
+		suffixes.add(new Suffix(new String[] { "y", "ego", "emu", "ego", "ym", "ym", "y" }));
+		suffixes.add(new Suffix(new String[] { "iel", "iela", "ielowi", "iela", "ielem", "ielu", "ielu" }));
+		suffixes.add(new Suffix(new String[] { "tel", "tela", "telowi", "tela", "telem", "telu", "telu" }));
+		suffixes.add(new Suffix(new String[] { "el", "la", "lowi", "la", "lem", "lu", "lu" }));
+		suffixes.add(new Suffix(new String[] { "l", "la", "lowi", "la", "lem", "lu", "lu" }));
+		suffixes.add(new Suffix(new String[] { "g", "ga", "gowi", "ga", "giem", "gu", "gu" }));
+		suffixes.add(new Suffix(new String[] { "b", "ba", "bowi", "ba", "bem", "bie", "bie" }));
+		suffixes.add(new Suffix(new String[] { "li", "lego", "lemu", "lego", "lim", "lim", "li" }));
+		suffixes.add(new Suffix(new String[] { "i", "iego", "iemu", "iego", "im", "im", "i" }));
+		suffixes.add(new Suffix(new String[] { "óć", "ocia", "ociowi", "ocia", "ociem", "ociu", "ociu" }));
+		suffixes.add(new Suffix(new String[] { "óń", "onia", "oniowi", "onia", "oniem", "oniu", "oniu" }));
+		suffixes.add(new Suffix(new String[] { "ć", "cia", "ciowi", "cia", "ciem", "ciu", "ciu" }));
+		suffixes.add(new Suffix(new String[] { "ń", "nia", "niowi", "nia", "niem", "niu", "niu" }));
+		suffixes.add(new Suffix(new String[] { "óź", "ozia", "oziowi", "ozia", "oziem", "oziu", "oziu" }));
+		suffixes.add(new Suffix(new String[] { "ź", "ozia", "oziowi", "ozia", "oziem", "oziu", "oziu" }));
+		suffixes.add(new Suffix(new String[] { "óż", "oża", "ożowi", "oża", "ożem", "ożu", "ożu" }));
+		suffixes.add(new Suffix(new String[] { "ż", "oża", "ożowi", "oża", "ożem", "ożu", "ożu" }));
+		suffixes.add(new Suffix(new String[] { "ół", "oła", "ołowi", "oła", "ołem", "ole", "ole" }));
+		suffixes.add(new Suffix(new String[] { "ł", "ła", "łowi", "ła", "łem", "le", "le" }));
 	}
 	
 }
