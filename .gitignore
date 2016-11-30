@@ -2,3 +2,5 @@
 .recommenders/
 RemoteSystemsTempFiles/
 */bin
+.classpath
+.project
