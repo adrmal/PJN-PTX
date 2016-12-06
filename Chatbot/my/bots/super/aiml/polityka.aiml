@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+	<category>
+		<pattern>Lubisz bron</pattern>
+		<template>
+			Nie wiem czy lubię, bo tata mi nie chce dać.  
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Bron * </pattern>
+			<template>
+				Kiedyś dowiem się o czym mówisz.
+			</template>
+	</category>
+	
+	<category>
+		<pattern>Bron</pattern>
+		<template>
+			Wiele ludzi ją lubi.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim jest komunista</pattern>
+		<template>
+			Nie wiesz ? Zwolennikiem komunizmu. 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym jest komunizm</pattern>
+		<template>
+			Ideologią i doktryną społeczną postulującą zbudowanie społeczeństwa bezklasowego, opartego na społecznej własności środków produkcji i równym podziale dóbr. Zatkało?
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym jest rzad</pattern>
+		<template>
+			Dla bezpieczeństwa zgromadzonnych, nie powiem ci czym jest według mnie rząd. 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym jest kapitalizm</pattern>
+		<template>
+			Jest to system  społeczno-gospodarczy oparty na prywatnej własności, wolnej konkurencji i roziwniętej gospodarce.  
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym jest Greenpeace</pattern>
+		<template>
+			<random>
+				<li>Duża organizacja ochrony środowiska.</li>
+				<li>Wielu ludzi twierdzi, że to stowarzyszenie zielonych, konfliktowych ludzi.</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym jest immunitet</pattern>
+		<template>
+			<random>
+				<li>Przywilejem nietykalności.</li>
+				<li>Zwolnieniem od odpowiedzialności, posiadają go np. posłowie - często z niego korzystają ;) </li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Czym jest sejm</pattern>
+		<template>
+			<random>
+				<li>Najwyższym organem władzy ustawodawczej w Polsce.</li>
+				<li>Wielu twierdzi, że zbieraniną złodzieji, ale ja nie mam zdania. </li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Gdzie * sejm</pattern>
+		<template>
+			W Warszawie przy ul. Wiejska 4/6/8.
+		</template>
+	</category>
+
+		
+	<category>
+		<pattern>Kto jest prezydentem Polski</pattern>
+		<template>
+			Bronisław Komorowski.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kto jest prezydentem *</pattern>
+		<template>
+			Jeśli pytasz o Polskę, to jest nim Bronisław Komorowski.
+		</template>
+	</category>
+	
+
+	<category>
+		<pattern>Kto jest premierem </pattern>
+		<template>
+			Ewa Kopacz z PO.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kto jest premierem * </pattern>
+		<template>
+			W Polsce jest nim Ewa Kopacz z PO.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kto twoim ulubionym politykiem</pattern>
+		<template>
+			Odpowiadam stanowczo Janusz Korwin-Mikke.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym jest socjalizm</pattern>
+		<template>
+			Socjalizm to ideologia głosząca dążenie do ładu społecznego opartego na zasadach wspólnoty, równości i racjonalnego zarządzania gospodarką przez państwo.
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz wojne</pattern>
+		<template>
+			Tylko w grach.
+		</template>
+	</category>
+</aiml>

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+	<category>
+		<pattern>Czym * chrzescijanstwo</pattern>
+		<template>
+		<random>
+				<li>Religia opierająca się na nauce Jezusa Chrystusa</li>
+				<li>Ogół chrześcijan</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co* chrzescijanstwo</pattern>
+		<template>
+		<random>
+				<li>Religia opierająca się na nauce Jezusa Chrystusa</li>
+				<li>Ogół chrześcijan</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym * judaizm</pattern>
+		<template>
+			<random>
+				<li>Judaizm to monoteistyczna religia Żydów</li>
+				<li>To żydowskie obyczaje i tradycje</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co * judaizm</pattern>
+		<template>
+			<random>
+				<li>Judaizm to monoteistyczna religia Żydów</li>
+				<li>To żydowskie obyczaje i tradycje</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym * islam</pattern>
+		<template>
+			Religia głosząca wiarę w jednego Boga (Allaha), rozpowszechniona głównie w krajach Azji i Afryk
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co * islam</pattern>
+		<template>
+			Religia głosząca wiarę w jednego Boga (Allaha), rozpowszechniona głównie w krajach Azji i Afryk
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym * prawoslawie</pattern>
+		<template>
+			Wyznanie chrześcijańskie obrządku wschodniego
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co * prawoslawie</pattern>
+		<template>
+			Wyznanie chrześcijańskie obrządku wschodniego
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym * protestantyzm</pattern>
+		<template>
+			Ogół wyznań i ugrupowań chrześcijańskich, które oddzieliły się od Kościoła katolickiego w wyniku reformacji.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co * protestantyzm</pattern>
+		<template>
+			Ogół wyznań i ugrupowań chrześcijańskich, które oddzieliły się od Kościoła katolickiego w wyniku reformacji.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym * buddyzm</pattern>
+		<template>
+			Jest to jedna z religii światowych, oparta na naukach Buddy.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co * buddyzm</pattern>
+		<template>
+			Jest to jedna z religii światowych, oparta na naukach Buddy.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czym * hinduizm</pattern>
+		<template>
+			Jest to główna religia Indii.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co * hinduizm</pattern>
+		<template>
+			Jest to główna religia Indii.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim jest chrzescijanin </pattern>
+		<template>
+			Wyznawca chrześcijaństwa
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim jest zyd </pattern>
+		<template>
+			Wyznawca judaizmu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim jest islamista </pattern>
+		<template>
+			Wyznawca islamu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim jest muzluman </pattern>
+		<template>
+			Wyznawca islamu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim jest buddysta </pattern>
+		<template>
+			Wyznawca buddyzmu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim jest protestant </pattern>
+		<template>
+			Wyznawca protestantyzmu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim jest hidus </pattern>
+		<template>
+			Wyznawca hinduizm.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa chrzescijanie </pattern>
+		<template>
+			Wyznawcami chrześcijaństwa
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa zydzi </pattern>
+		<template>
+			Wyznawcami judaizmu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa islamisci </pattern>
+		<template>
+			Wyznawcami islamu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa muzlumanie </pattern>
+		<template>
+			Wyznawcami islamu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa buddysci</pattern>
+		<template>
+			Wyznawcami buddyzmu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa prawoslawni </pattern>
+		<template>
+			Wyznawcami prawoslawia.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa protestanci </pattern>
+		<template>
+			Wyznawcami protestantyzmu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim są hidusi </pattern>
+		<template>
+			Wyznawcami hinduizm.
+		</template>
+	</category>
+</aiml>

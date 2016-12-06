@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+	<category>
+		<pattern>Gdzie jest Polska</pattern>
+		<template>
+			 Polska jest to kraj połóżony pomiędzy Morzem Bałtyckim na północy a Sudetami i Karpatami na południu, w dorzeczy Wisły, odry 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Gdzie lezy Polska</pattern>
+		<template>
+			 Polska jest to kraj połóżony pomiędzy Morzem Bałtyckim na północy a Sudetami i Karpatami na południu, w dorzeczy Wisły, odry 
+		</template>
+	</category>
+	<category>
+		<pattern>Gdzie * Polska</pattern>
+		<template>
+			 Polska jest to kraj połóżony pomiędzy Morzem Bałtyckim na północy a Sudetami i Karpatami na południu, w dorzeczy Wisły, odry 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Gdzie Polska</pattern>
+		<template>
+			 Polska jest to kraj połóżony pomiędzy Morzem Bałtyckim na północy a Sudetami i Karpatami na południu, w dorzeczy Wisły, odry 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Jakie miasto jest stolica Polski</pattern>
+		<template>
+			 To proste, Warszawa
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co jest stolica Polski</pattern>
+		<template>
+			 Warszawa
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co * stolica Polski</pattern>
+		<template>
+			 Warszawa
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Jakie kraje granicza z Polska</pattern>
+		<template>
+			 Od północy Polska graniczy z Rosją (z jej obwodem kaliningradzkim) i Litwą, od wschodu z Białorusią i Ukrainą, od południa ze Słowacją i Czechami, od zachodu z Niemcami.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Z czym graniczy Polska</pattern>
+		<template>
+			 Od północy Polska graniczy z Rosją (z jej obwodem kaliningradzkim) i Litwą, od wschodu z Białorusią i Ukrainą, od południa ze Słowacją i Czechami, od zachodu z Niemcami.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Skad pochodzisz</pattern>
+		<template>
+			 Pochodzę z Polski.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* USA</pattern>
+		<template>
+			 USA leży w Ameryce Północnej 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Stany Zjednoczne </pattern>
+		<template>
+			 USA leży w Ameryce Północnej 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Z kim graniczy USA </pattern>
+		<template>
+			USA graniczy z Kanada i Meksykiem
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Z jakim krajami graniczy USA </pattern>
+		<template>
+			USA graniczy z Kanada i Meksykiem
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Z jakim krajami granicza Stany Zjedoczone </pattern>
+		<template>
+			Stany Zjednoczonej Ameryki graniczą z Kanada i Meksykiem
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa Niemcy</pattern>
+		<template>
+			 Są naszymi sąsiadami
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa Łotysze </pattern>
+		<template>
+			 Są naszymi sąsiadami
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa Litwini </pattern>
+		<template>
+			 Są naszymi sąsiadami
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa Czesi </pattern>
+		<template>
+			<random>
+				<li>Są naszymi sąsiadami</li>
+				<li>Są Słowianami</li>
+			 </random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa Słowianie </pattern>
+		<template>
+			<random>
+				<li>Są naszymi sąsiadami</li>
+				<li>Są Słowianami</li>
+			 </random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa Rosjanie </pattern>
+		<template>
+			 Są naszymi sąsiadami
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa Ukraincy </pattern>
+		<template>
+			 Są naszymi sąsiadami
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Kim sa Białorusini </pattern>
+		<template>
+			 Są naszymi sąsiadami
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Gdzie chcialbys pojechac </pattern>
+		<template>
+			 Są naszymi sąsiadami
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Anglia </pattern>
+		<template>
+			 Wiem, że jest tam fajny mają zegar . Postawie sobie, kiedyś taki przy plaży.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Anglicy</pattern>
+		<template>
+			 Mogliby grać trochę lepiej w nogę - byli by mistrzami :)
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Amsterdam </pattern>
+		<template>
+			 Powiem tyle, miasto wielu kultur :) 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Tunezja</pattern>
+		<template>
+			 Ciepło tam jest, byłeś tam może na wczasach ?
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Afryka </pattern>
+		<template>
+			 Za ciepło dla mnie.
+		</template>
+	</category>
+
+	<category>
+		<pattern>Gdzie UAM</pattern>
+		<template>
+			 Oczywiście, że w Pozananiu
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Gdzie jest UAM</pattern>
+		<template>
+			 Oczywiście, że w Pozananiu
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Gdzie lezy UAM</pattern>
+		<template>
+			 Oczywiście, że w Pozananiu
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Gdzie lezy Uniwersytet Adama Mickiwicza</pattern>
+		<template>
+			 Nie wiesz ? W POZNANIU ! 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Gdzie jest Uniwersytet Adama Mickiwicza</pattern>
+		<template>
+			 Nie wiesz ? W POZNANIU ! 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* WMI </pattern>
+		<template>
+			Wiem, że jest na Morasku
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Wydział Matematyki i Inforamtyki </pattern>
+		<template>
+			Wiem, że jest na Morasku
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Hiszpania</pattern>
+		<template>
+			<random>
+				<li>Leży na półwyspie Iberyjskim</li>
+				<li>Chciałbym tam kiedyś zamieszkać</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Francja</pattern>
+		<template>
+			<random>
+				<li>Kojarzy mi się tylko z żabami</li>
+				<li>Fajną mają wieżę, może kiedyś sobię też tu taką zbuduję</li>
+				<li>Jeździ tam dużo Peugeotów oraz Citroenów</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Szwajcaria</pattern>
+		<template>
+			<random>
+				<li>To tam gdzie robią te dobre zegarki</li>
+				<li>Kiedyś lokowałem tam swoje pieniądze</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Wlochy</pattern>
+		<template>
+			<random>
+				<li>Włochy? Są w kształcie buta</li>
+				<li>To stamtąd pochodzi Fiat, nie?</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Austria</pattern>
+		<template>
+			<random>
+				<li>Byłem tam kiedyś na nartach</li>
+				<li>Fajne góry tam są, idealne do zjazdów</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Australia</pattern>
+		<template>
+			<random>
+				<li>To państwo jaki i kontynent</li>
+				<li>Jest tam góra Kościuszki</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Irak</pattern>
+		<template>
+			<random>
+				<li>Polacy tam kiedyś walczyli o pokój</li>
+				<li>Jest tam dużo islamistów</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* Watykan</pattern>
+		<template>
+			<random>
+				<li>Jest tam dużo księży</li>
+				<li>To stolica apostolska</li>
+				<li>Wiem, że jest tam plac św. Piotra</li>
+			</random>
+		</template>
+	</category>
+</aiml>

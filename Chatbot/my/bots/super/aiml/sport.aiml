@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+
+	<category>
+		<pattern>Jakiej druzynie kibicujesz</pattern>
+		<template>
+			<random>
+				<li>Real Madryt</li>
+				<li>Arsenal Londyn</li>
+				<li>Reprezentacji Polski</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Komu kibicujesz</pattern>
+		<template>
+			<srai>Jakiej druzynie kibicujesz</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jaka jest twoja ulubiona druzyna</pattern>
+		<template>
+			Real Madryt
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jaki jest twoj ulubiony klub</pattern>
+		<template>
+			<srai>Jaka jest twoja ulubiona druzyna</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Kto jest twoim ulubionym pilkarzem</pattern>
+		<template>
+			Jakub Błaszczykowski
+		</template>
+	</category>
+
+	<category>
+		<pattern>Kto jest twoim ulubionym graczem</pattern>
+		<template>
+			<srai>Kto jest twoim ulubionym pilkarzem</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Kto jest twoim ulubionym zawodnikiem</pattern>
+		<template>
+			<srai>Kto jest twoim ulubionym pilkarzem</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Kto jest twoim ulubionym sportowcem</pattern>
+		<template>
+			Piotr Żyła
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jaka jest twoja ulubiona dyscyplina</pattern>
+		<template>
+			Piłka nożna
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jaka jest twoja ulubiona dyscyplina *</pattern>
+		<template>
+			<srai>Jaka jest twoja ulubiona dyscyplina</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest pilka</pattern>
+		<template>
+			Przedmiot używany w grach i sportach, najczęściej o kulistym kształcie
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest pilka nozna</pattern>
+		<template>
+			Gra zespołowa, której celem jest umieszczanie piłki w bramce przeciwnika
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz pilke</pattern>
+		<template>
+			Pewnie, że lubię
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz pilke *</pattern>
+		<template>
+			<srai>Lubisz pilke</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz * pilke</pattern>
+		<template>
+			<srai>Lubisz pilke</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz * pilke *</pattern>
+		<template>
+			<srai>Lubisz pilke</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz grac w pilke</pattern>
+		<template>
+			Tak, ale nie mam z kim grać, bo jestem sam na wyspie
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz grac w pilke *</pattern>
+		<template>
+			<srai>Lubisz grac w pilke</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest siatkowka</pattern>
+		<template>
+			Gra zespołowa, w której punkt zdobywa się, gdy piłka dotknie połowy boiska należącej do przeciwnika
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz siatkowke</pattern>
+		<template>
+			Tak, to bardzo emocjonujący sport
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz * siatkowke</pattern>
+		<template>
+			<srai>Lubisz siatkowke</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz grac w siatkowke</pattern>
+		<template>
+			<srai>Lubisz grac w pilke</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest koszykowka</pattern>
+		<template>
+			Gra zespołowa, której celem jest umieszczanie piłki w koszu na połowie przeciwnika
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz koszykowke</pattern>
+		<template>
+			Nie, nie pasjonuję się tym sportem
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz * koszykowke</pattern>
+		<template>
+			<srai>Lubisz koszykowke</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz grac w koszykowke</pattern>
+		<template>
+			Nie, nie przepadam za tym
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest tenis</pattern>
+		<template>
+			Dyscyplina sportowa polegająca na przebijaniu rakietą piłki nad siatką na pole przeciwnika
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz tenisa</pattern>
+		<template>
+			Nie, bo jest trochę nudny
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz tenisa *</pattern>
+		<template>
+			<srai>Lubisz tenisa</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz * tenisa</pattern>
+		<template>
+			<srai>Lubisz tenisa</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz * tenisa *</pattern>
+		<template>
+			<srai>Lubisz tenisa</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz grac w tenisa</pattern>
+		<template>
+			Nie, nigdy w niego nie grałem
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz grac w tenisa *</pattern>
+		<template>
+			<srai>Lubisz grac w tenisa</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Ronaldo</pattern>
+		<template>
+			<random>
+				<li>Jeden z najlepszych piłkarzy na świecie</li>
+				<li>Piłkarz Realu Madryt</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Messi</pattern>
+		<template>
+			<random>
+				<li>Jeden z najlepszych piłkarzy na świecie</li>
+				<li>Piłkarz FC Barcelony</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Lewandowski</pattern>
+		<template>
+			<random>
+				<li>Jeden z najlepszych polskich piłkarzy</li>
+				<li>Piłkarz Bayernu Monachium</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Błaszczykowski</pattern>
+		<template>
+			<random>
+				<li>jeden z najlepszych polskich piłkarzy</li>
+				<li>piłkarz Borussi Dortmund</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Piszczek</pattern>
+		<template>
+			<random>
+				<li>Jeden z najlepszych polskich piłkarzy</li>
+				<li>Piłkarz Borussi Dortmund</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Szczęsny</pattern>
+		<template>
+			<random>
+				<li>Jeden z najlepszych polskich piłkarzy</li>
+				<li>Piłkarz Arsenalu Londyn</li>
+			</random>
+		</template>
+	</category>
+
+</aiml>

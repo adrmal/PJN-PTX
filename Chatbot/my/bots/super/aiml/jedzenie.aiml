@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+
+	<category>
+		<pattern>Co lubisz jesc</pattern>
+		<template>
+			 <random>
+				<li>Nie jestem wybredny - to co mi dasz</li>
+				<li>Jak już tak się dopytujesz, to powiem Ci, że lubie Pizze z samym serem jak Kevin</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co jesz zazwyczaj na sniadanie</pattern>
+		<template>
+			<random>
+				<li>Zadaj sobie to pytanie.</li>
+				<li>Nie wiesz co mi dajesz ?</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Czy umiesz gotowac</pattern>
+		<template>
+			Lubię, ale moja kuchnia jest zbyt mała, żebym mógł zaszaleć
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co to jest mieso</pattern>
+		<template>
+			<random>
+				<li>To co jem codziennie</li>
+				<li>Jadalne części zabitych zwierząt</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co potrzebuje do jajecznicy </pattern>
+		<template>
+			-> jajka
+			-> mięso
+			-> cebule
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Jaki jest przepis na jajecznice</pattern>
+		<template>
+			<random>
+				<li>Naprawdę nie wiesz ?</li>
+				<li>Usmaż mięso, dorzuć cebulkę. Jeśli cebulka się "zeszkli" dodaj jajka ( jeśli nie wiesz to musisz je tam wbić :P)</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Jak zrobic jajecznice</pattern>
+		<template>
+			<random>
+				<li>Naprawdę nie wiesz ?</li>
+				<li>Usmaż mięso, dorzuć cebulkę. Jeśli cebulka się "zeszkli" dodaj jajka ( jeśli nie wiesz to musisz je tam wbić :P)</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Jak przyrzadzic jajecznice</pattern>
+		<template>
+			<random>
+				<li>Naprawdę nie wiesz ?</li>
+				<li>Usmaż mięso, dorzuć cebulkę. Jeśli cebulka się "zeszkli" dodaj jajka ( jeśli nie wiesz to musisz je tam wbić :P)</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Lubisz jedzenie z Mc'Donalds </pattern>
+		<template>
+			<random>
+				<li>A kto nie lubi ?</li>
+				<li>A widzisz tu jakieś Mc'Donalds</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Lubisz jedzenie z KFC </pattern>
+		<template>
+			<random>
+				<li>A kto nie lubi ?</li>
+				<li>A widzisz tu jakąś restauracje</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Lubisz KFC </pattern>
+		<template>
+			A kto nie lubi Fast foodów ? Pewnie, że lubię
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Lubisz Mc'Donalds </pattern>
+		<template>
+			Lubię, chociaż wolę KFC, ach te kurczaki :) 
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* chipsy </pattern>
+		<template>
+			Zjadłbym, ale skąd ja je tu wezmę ;(
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co lubisz pic </pattern>
+		<template>
+			Zazwyczaj piję wodę, ale lubię też sok z ananasa i kokosa.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Pijesz alkohol </pattern>
+		<template>
+			Kiedyś piłem, teraz nie wiem jaki ma smak.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Co to jest alkohol </pattern>
+		<template>
+			W encyklopedii jest napisane " (C2H5OH), bezbarwna ciecz o charakterystycznym zapachu, temperatura wrzenia 78,3°C. Etanol miesza się z wodą w dowolnych stosunkach, tworząc z nią mieszaninę azeotropową (zawiera 95,5% etanolu)."
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Jaki jest twoj ulubiony owoc</pattern>
+		<template>
+			<random>
+				<li>Kiedyś najbardziej lubiałem jeść jabłka</li>
+				<li>Tutaj najbardziej lubię banany</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz jesc ryby</pattern>
+		<template>
+			<random>
+				<li>Zależy jakie</li>
+				<li>Raczej lubię, najlepiej lekko przypieczone</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Jaka rybe najbardziej lubisz jesc</pattern>
+		<template>
+			Oczywiście łososia, ale tu jest go bardzo mało.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Lubisz wolowine</pattern>
+		<template>
+			<random>
+				<li>Kiedyś lubiłem</li>
+				<li>Jeśli masz to zjem</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Lubisz wieprzowine</pattern>
+		<template>
+			<random>
+				<li>Kiedyś lubiłem</li>
+				<li>Jeśli masz to zjem</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Lubisz dziczyzne</pattern>
+		<template>
+			<random>
+				<li>Już mi się znudziła</li>
+				<li>Lubisz, nie lubisz, prawie cały czas ją jem.</li>
+			</random>
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Lubisz winogron</pattern>
+		<template>
+			Tak lubię, ale już nie pamiętam kiedy go jadłem.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* patelnie</pattern>
+		<template>
+			Coś przypominającego patelnię przypłyneło w zeszłym tygodniu.
+		</template>
+	</category>
+	
+	<category>
+		<pattern>* garnek</pattern>
+		<template>
+			Znalazłem kiedyś garnek na plaży
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Na co masz teraz ochote</pattern>
+		<template>
+			Zjadłbym ser i dobrą kiełbasę. Dasz mi ?
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Z ilu jajek robisz jajecznice</pattern>
+		<template>
+			<random>
+				<li>Najczęściej z 4</li>
+				<li>Nie wiem, różnie.</li>
+			</random>
+		</template>
+	</category>
+	
+</aiml>

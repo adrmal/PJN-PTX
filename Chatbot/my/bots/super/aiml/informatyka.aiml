@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<aiml>
+
+	<category>
+		<pattern>Jaka jest twoja ulubiona gra</pattern>
+		<template>
+			<random>
+				<li>Bash</li>			
+				<li>Rozbitek</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jaka jest twoje ulubiona gra *</pattern>
+		<template>
+			<srai>Jaka jest twoja ulubiona gra</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz grac</pattern>
+		<template>
+			Jasne, mógłbym grać bez przerwy
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz grac *</pattern>
+		<template>
+			<srai>Lubisz grac</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz gry</pattern>
+		<template>
+			<srai>Lubisz grac</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz gry *</pattern>
+		<template>
+			<srai>Lubisz grac</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jakie gry lubisz</pattern>
+		<template>
+			Lubię strzelanki, wyścigówki... właściwie to uwielbiam wszytkie gry
+		</template>
+	</category>
+	
+	<category>
+		<pattern>Jaki jest twoj ulubiony jezyk</pattern>
+		<template>
+			<random>
+				<li>C</li>
+				<li>C++</li>
+				<li>Asembler</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jaki jest twoj ulubiony jezyk *</pattern>
+		<template>
+			<srai>Jaki jest twoj ulubiony jezyk</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jaki jest twoj ulubiony system</pattern>
+		<template>
+			Windows Vista
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jaki jest twoj ulubiony system *</pattern>
+		<template>
+			<srai>Jaki jest twoj ulubiony system</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jaka jest twoja ulubiona strona</pattern>
+		<template>
+			w3schools.com
+		</template>
+	</category>
+
+	<category>
+		<pattern>Jaka jest twoja ulubiona strona *</pattern>
+		<template>
+			<srai>Jaka jest twoja ulubiona strona</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Windows</pattern>
+		<template>
+			System operacyjny
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Linux</pattern>
+		<template>
+			Najlepszy system operacyjny
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Ubuntu</pattern>
+		<template>
+			Dystrybucja Linuxa
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Debian</pattern>
+		<template>
+			Dystrybucja Linuxa
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Fedora</pattern>
+		<template>
+			Dystrybucja Linuxa
+		</template>
+	</category>
+
+	<category>
+		<pattern>* openSUSE</pattern>
+		<template>
+			Dystrybucja Linuxa
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Arch Linux</pattern>
+		<template>
+			Dystrybucja Linuxa
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Gates</pattern>
+		<template>
+			Założyciel Microsoftu
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Jobs</pattern>
+		<template>
+			Założyciel Apple
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Torvalds</pattern>
+		<template>
+			Twórca Linuxa
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Zuckerberg</pattern>
+		<template>
+			Twórca Facebooka
+		</template>
+	</category>
+
+	<category>
+		<pattern>* Facebook</pattern>
+		<template>
+			Baza danych amerykańskich służb
+		</template>
+	</category>
+
+	<category>
+		<pattern>Masz konto na Facebooku</pattern>
+		<template>
+			Nie, tata mi nie pozwolił założyć
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest C</pattern>
+		<template>
+			Język programowania
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest C++</pattern>
+		<template>
+			<srai>Co to jest C</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest Java</pattern>
+		<template>
+			<srai>Co to jest C</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz C</pattern>
+		<template>
+			Tak, chociaż wolę C++, bo jest obiektowy 
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz C++</pattern>
+		<template>
+			Tak, ale nie znoszę wskaźników
+		</template>
+	</category>
+
+	<category>
+		<pattern>Lubisz Jave</pattern>
+		<template>
+			Nie przepadam za tym językiem
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest informatyka</pattern>
+		<template>
+			Dyscyplina nauki zaliczana do nauk ścisłych zajmująca się przetwarzaniem informacji
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest KCK</pattern>
+		<template>
+			Komunikacja człowiek-komputer
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest komunikacja czlowiek komputer</pattern>
+		<template>
+			Dział informatyki zajmujący się projektowaniem interfejsów użytkownika oraz badaniem interakcji człowieka z komputerem
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest komputer</pattern>
+		<template>
+			Urządzenie, na którym mogę pykać w gry
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest laptop</pattern>
+		<template>
+			Przenośny komputer
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest monitor</pattern>
+		<template>
+			Urządzenie wyjścia, służące do komunikacji użytkownika z komputerem
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest klawiatura</pattern>
+		<template>
+			Coś, dzięki czemu zadałeś mi to pytanie
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest myszka</pattern>
+		<template>
+			Urządzenie wskazujące, służące do obsługi komputera
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest touchpad</pattern>
+		<template>
+			Urządzenie wskazujące, reagujące na dotyk, zwykle spotykane w laptopach
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest tablet</pattern>
+		<template>
+			Rodzaj przenośnego komputera z ekranem dotykowym, większego niż smartfon
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest smartfon</pattern>
+		<template>
+			Telefon, aparat, kamera, konsola do gier, kalendarz, kalkulator, zegarek...
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest komorka</pattern>
+		<template>
+			Przenośny, bezprzewodowy telefon z dodatkowymi funkcjami, np. SMS
+		</template>
+	</category>
+
+	<category>
+		<pattern>Co to jest telefon komorkowy</pattern>
+		<template>
+			<srai>Co to jest komorka</srai>
+		</template>
+	</category>
+
+</aiml>
