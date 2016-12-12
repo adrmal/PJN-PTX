@@ -22,12 +22,23 @@ public class CorrectorMachine {
 	}
 	
 	public static String getCorrectedText2(String text) {
+		text = text.replaceAll(" {2,}", " ");
+		
 		List<String> wordsInText = getWordsInLine(text);
 		for(String word : wordsInText) {
-			if(!listOfAllWords.contains(word)) {
+			if(!listOfAllWords.contains(word) && listOfAllWords.contains(word.substring(0, 1).toUpperCase() + word.substring(1))) {
+				text = text.replaceAll("\\b" + word + "\\b", word.substring(0, 1).toUpperCase() + word.substring(1));
+			}
+			else if(!listOfAllWords.contains(word) && !listOfAllWords.contains(word.toLowerCase())) {
 				// wyszukanie słowa różniącego się jedną literą
 				text = text.replaceAll("\\b" + word + "\\b", "BŁĄD");
 			}
+		}
+		
+		Pattern pattern2 = Pattern.compile("morze (się |)(\\p{L}+(ć|c))");
+		Matcher matcher2 = pattern2.matcher(text);
+		if(matcher2.find()) {
+			text = text.replaceAll("morze (się |)\\p{L}+(ć|c)", "może " + matcher2.group(1) + matcher2.group(2));
 		}
 
 		return text;
@@ -70,4 +81,23 @@ public class CorrectorMachine {
 		return words;
 	}
 
+	private static String getSimilarWord(String word) {
+		for(String similarWord : listOfAllWords) {
+			int length = Math.min(word.length(), similarWord.length());
+			int counter = 0;
+			for(int i=0; i<length; i++) {
+				if(word.charAt(i) != similarWord.charAt(i)) {
+					counter++;
+				}
+			}
+			if(counter > 2) {
+				continue;
+			}
+			else {
+				return similarWord;
+			}
+		}
+		return word;
+	}
+	
 }
