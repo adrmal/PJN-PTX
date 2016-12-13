@@ -20,7 +20,7 @@ public class SurnamesMachine {
 				return matcher.group(1) + suffix.getSuffixInCase(grammaticalCase);
 			}
 		}
-		return null;
+		return surname;
 	}
 	
 }

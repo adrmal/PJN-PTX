@@ -56,7 +56,8 @@ public class SurnamesDatabase {
 		suffixes.add(new Suffix(new String[] { "s", "sa", "sowi", "sa", "sem", "sie", "sie" }));
 		suffixes.add(new Suffix(new String[] { "ów", "owa", "owowi", "owa", "owem", "owie", "owie" }));
 		suffixes.add(new Suffix(new String[] { "w", "wa", "wowi", "wa", "wem", "wie", "wie" }));
-		
+		suffixes.add(new Suffix(new String[] { "ta", "ty", "cie", "tę", "tą", "cie", "to" }));
+		suffixes.add(new Suffix(new String[] { "e", "ego", "e", "ę", "ą", "e", "o" }));
 	}
 	
 }

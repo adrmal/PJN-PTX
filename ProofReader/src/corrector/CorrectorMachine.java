@@ -11,20 +11,55 @@ import java.util.regex.Pattern;
 public class CorrectorMachine {
 
 	private static List<String> listOfAllWords;
-
-	public static String getCorrectedText(String text) {
-		for(String regex : CorrectorDatabase.regexes.keySet()) {
-			if(text.contains(regex)) {
-				text = text.replace(regex, CorrectorDatabase.regexes.get(regex));
-			}
-		}
-		return text;
-	}
 	
 	public static String getCorrectedText2(String text) {
 		text = text.replaceAll(" {2,}", " ");
 		text = text.replaceAll(" +\\.", "\\.");
 		text = text.replaceAll(" +,", ",");
+		text = text.replaceAll(" +;", ";");
+		
+		Pattern pattern = Pattern.compile("\\.(\\p{L})");
+		Matcher matcher = pattern.matcher(text);
+		while(matcher.find()) {
+			text = text.replaceAll("\\." + matcher.group(1), ". " + matcher.group(1));
+		}
+		
+		Pattern pattern1 = Pattern.compile(",(\\p{L})");
+		Matcher matcher1 = pattern1.matcher(text);
+		while(matcher1.find()) {
+			text = text.replaceAll("," + matcher1.group(1), ", " + matcher1.group(1));
+		}
+		
+		Pattern pattern4 = Pattern.compile(";(\\p{L})");
+		Matcher matcher4 = pattern4.matcher(text);
+		while(matcher4.find()) {
+			text = text.replaceAll(";" + matcher4.group(1), "; " + matcher4.group(1));
+		}
+		
+		Pattern pattern2 = Pattern.compile("\\. (\\p{Ll})");
+		Matcher matcher2 = pattern2.matcher(text);
+		while(matcher2.find()) {
+			text = text.replaceAll("\\. " + matcher2.group(1), ". " + matcher2.group(1).toUpperCase());
+		}		
+		
+		text = text.replaceAll("\\bsie\\b", "się");
+		text = text.replaceAll("\\bSie\\b", "Się");
+		text = text.replaceAll("\\bbede\\b|\\bbęde\\b|\\bbedę\\b", "będę");
+		text = text.replaceAll("\\bBede\\b|\\bBęde\\b|\\bBedę\\b", "Będę");
+		text = text.replaceAll("w każdym bądź razie", "w każdym razie");
+		text = text.replaceAll("W każdym bądź razie", "W każdym razie");
+		text = text.replaceAll("ojedyńcz", "ojedyncz");
+		text = text.replaceAll("narazie", "na razie");
+		text = text.replaceAll("Narazie", "Na razie");
+		text = text.replaceAll("wogóle", "w ogóle");
+		text = text.replaceAll("Wogóle", "W ogóle");
+		
+		text = text.replaceAll("miedzy", "między");
+		Pattern pattern5 = Pattern.compile("(zza|Zza|do|Do|od|Od|przy|Przy|z|Z|na|Na|po|Po) między");
+		Matcher matcher5 = pattern5.matcher(text);
+		while(matcher5.find()) {
+			text = text.replaceAll(matcher5.group(1) + " między", matcher5.group(1) + " miedzy");
+		}	
 		
 		List<String> wordsInText = getWordsInLine(text);
 		for(String word : wordsInText) {
@@ -32,15 +67,15 @@ public class CorrectorMachine {
 				text = text.replaceAll("\\b" + word + "\\b", word.substring(0, 1).toUpperCase() + word.substring(1));
 			}
 			else if(!listOfAllWords.contains(word) && !listOfAllWords.contains(word.toLowerCase())) {
-				// wyszukanie słowa różniącego się jedną literą
-				text = text.replaceAll("\\b" + word + "\\b", "BŁĄD");
+				String similarWord = getSimilarWord(word);
+				text = text.replaceAll("\\b" + word + "\\b", similarWord);
 			}
 		}
 		
-		Pattern pattern2 = Pattern.compile("morze (się |)(\\p{L}+(ć|c))");
-		Matcher matcher2 = pattern2.matcher(text);
-		if(matcher2.find()) {
-			text = text.replaceAll("morze (się |)\\p{L}+(ć|c)", "może " + matcher2.group(1) + matcher2.group(2));
+		Pattern pattern3 = Pattern.compile("(m|M)orze (się |)(\\p{L}+(ć|c))");
+		Matcher matcher3 = pattern3.matcher(text);
+		while(matcher3.find()) {
+			text = text.replaceAll(matcher3.group(1) + "orze " + matcher3.group(2) + matcher3.group(3), matcher3.group(1) + "oże " + matcher3.group(2) + matcher3.group(3));
 		}
 
 		return text;
@@ -84,21 +119,36 @@ public class CorrectorMachine {
 	}
 
 	private static String getSimilarWord(String word) {
-		for(String similarWord : listOfAllWords) {
-			int length = Math.min(word.length(), similarWord.length());
-			int counter = 0;
-			for(int i=0; i<length; i++) {
-				if(word.charAt(i) != similarWord.charAt(i)) {
-					counter++;
-				}
-			}
-			if(counter > 2) {
-				continue;
-			}
-			else {
-				return similarWord;
-			}
+		if(word.contains("u")) {
+			word = word.replace("u", "ó");
 		}
+		else if(word.contains("ó")) {
+			word = word.replace("ó", "u");
+		}
+		if(listOfAllWords.contains(word)) {
+			return word;
+		}
+		
+		if(word.contains("ż")) {
+			word = word.replace("ż", "rz");
+		}
+		else if(word.contains("rz")) {
+			word = word.replace("rz", "ż");
+		}
+		if(listOfAllWords.contains(word)) {
+			return word;
+		}
+		
+		if(word.contains("h")) {
+			word = word.replace("h", "ch");
+		}
+		else if(word.contains("ch")) {
+			word = word.replace("ch", "h");
+		}
+		if(listOfAllWords.contains(word)) {
+			return word;
+		}
+
 		return word;
 	}
 	
