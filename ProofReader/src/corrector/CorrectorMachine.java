@@ -23,6 +23,8 @@ public class CorrectorMachine {
 	
 	public static String getCorrectedText2(String text) {
 		text = text.replaceAll(" {2,}", " ");
+		text = text.replaceAll(" +\\.", "\\.");
+		text = text.replaceAll(" +,", ",");
 		
 		List<String> wordsInText = getWordsInLine(text);
 		for(String word : wordsInText) {
@@ -54,7 +56,7 @@ public class CorrectorMachine {
 				path = path + "\\res\\odm.txt";
 			}
 			System.out.println(path);
-			List<String> lines = Files.readAllLines(Paths.get(System.getProperty("user.dir") + "/res/odm.txt"));
+			List<String> lines = Files.readAllLines(Paths.get(System.getProperty("user.dir") + path));
 			
 			listOfAllWords = new ArrayList<>();
 	
