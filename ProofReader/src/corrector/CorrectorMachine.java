@@ -72,6 +72,12 @@ public class CorrectorMachine {
 			}
 		}
 		
+		Pattern pattern6 = Pattern.compile("(\\p{L}) (który|którego|któremu|którym|która|której|którą|które|których|którymi|którzy)");
+		Matcher matcher6 = pattern6.matcher(text);
+		while(matcher6.find()) {
+			text = text.replaceAll(matcher6.group(1) + " " + matcher6.group(2), matcher6.group(1) + ", " + matcher6.group(2));
+		}	
+		
 		Pattern pattern3 = Pattern.compile("(m|M)orze (się |)(\\p{L}+(ć|c))");
 		Matcher matcher3 = pattern3.matcher(text);
 		while(matcher3.find()) {
