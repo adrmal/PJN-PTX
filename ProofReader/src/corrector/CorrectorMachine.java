@@ -56,7 +56,7 @@ public class CorrectorMachine {
 				path = path + "\\res\\odm.txt";
 			}
 			System.out.println(path);
-			List<String> lines = Files.readAllLines(Paths.get(System.getProperty("user.dir") + path));
+			List<String> lines = Files.readAllLines(Paths.get(path));
 			
 			listOfAllWords = new ArrayList<>();
 	
