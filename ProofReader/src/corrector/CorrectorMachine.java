@@ -53,6 +53,10 @@ public class CorrectorMachine {
 		text = text.replaceAll("Narazie", "Na razie");
 		text = text.replaceAll("wogóle", "w ogóle");
 		text = text.replaceAll("Wogóle", "W ogóle");
+		text = text.replaceAll("\\bjusz\\b", "już");
+		text = text.replaceAll("\\bJusz\\b", "Już");
+		text = text.replaceAll("\\bjurz\\b", "już");
+		text = text.replaceAll("\\bJurz\\b", "Już");
 		
 		text = text.replaceAll("miedzy", "między");
 		Pattern pattern5 = Pattern.compile("(zza|Zza|do|Do|od|Od|przy|Przy|z|Z|na|Na|po|Po) między");
@@ -76,7 +80,25 @@ public class CorrectorMachine {
 		Matcher matcher6 = pattern6.matcher(text);
 		while(matcher6.find()) {
 			text = text.replaceAll(matcher6.group(1) + " " + matcher6.group(2), matcher6.group(1) + ", " + matcher6.group(2));
-		}	
+		}
+		
+		Pattern pattern8 = Pattern.compile("(\\p{L}) (za|przed|w|na|po|pod|o|u|do|od|dla), (który|którego|któremu|którym|która|której|którą|które|których|którymi|którzy)");
+		Matcher matcher8 = pattern8.matcher(text);
+		while(matcher8.find()) {
+			text = text.replaceAll(matcher8.group(1) + " " + matcher8.group(2) + ", " + matcher8.group(3), matcher8.group(1) + " " + matcher8.group(2) + " " + matcher8.group(3));
+		}
+		
+		Pattern pattern7 = Pattern.compile("(\\p{L}) (za|przed|w|na|po|pod|o|u|do|od|dla) (który|którego|któremu|którym|która|której|którą|które|których|którymi|którzy)");
+		Matcher matcher7 = pattern7.matcher(text);
+		while(matcher7.find()) {
+			text = text.replaceAll(matcher7.group(1) + " " + matcher7.group(2) + " " + matcher7.group(3), matcher7.group(1) + ", " + matcher7.group(2) + " " + matcher7.group(3));
+		}
+		
+		Pattern pattern9 = Pattern.compile("(\\p{L}), (za|przed|w|na|po|pod|o|u|do|od|dla), (który|którego|któremu|którym|która|której|którą|które|których|którymi|którzy)");
+		Matcher matcher9 = pattern9.matcher(text);
+		while(matcher9.find()) {
+			text = text.replaceAll(matcher9.group(1) + ", " + matcher9.group(2) + ", " + matcher9.group(3), matcher9.group(1) + ", " + matcher9.group(2) + " " + matcher9.group(3));
+		}
 		
 		Pattern pattern3 = Pattern.compile("(m|M)orze (się |)(\\p{L}+(ć|c))");
 		Matcher matcher3 = pattern3.matcher(text);
