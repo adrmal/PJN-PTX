@@ -21,6 +21,34 @@
 	</category>
 
 	<category>
+		<pattern>Dzień dobry</pattern>
+		<template>
+			<srai>Witaj</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Dzień dobry *</pattern>
+		<template>
+			<srai>Witaj</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Dobry wieczór</pattern>
+		<template>
+			<srai>Witaj</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Dobry wieczór *</pattern>
+		<template>
+			<srai>Witaj</srai>
+		</template>
+	</category>
+
+	<category>
 		<pattern>Cześć</pattern>
 		<template>
 			<srai>Witaj</srai>
