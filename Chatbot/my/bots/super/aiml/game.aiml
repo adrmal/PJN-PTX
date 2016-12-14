@@ -21,6 +21,34 @@
 	</category>
 
 	<category>
+		<pattern>Cześć</pattern>
+		<template>
+			<srai>Witaj</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Cześć *</pattern>
+		<template>
+			<srai>Witaj</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Hej</pattern>
+		<template>
+			<srai>Witaj</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Hej *</pattern>
+		<template>
+			<srai>Witaj</srai>
+		</template>
+	</category>
+
+	<category>
 		<pattern>Do widzenia</pattern>
 		<template>
 			<random>
@@ -33,6 +61,20 @@
 	
 	<category>
 		<pattern>Do widzenia *</pattern>
+		<template>
+			<srai>Do widzenia</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Na razie</pattern>
+		<template>
+			<srai>Do widzenia</srai>
+		</template>
+	</category>
+
+	<category>
+		<pattern>Na razie *</pattern>
 		<template>
 			<srai>Do widzenia</srai>
 		</template>
