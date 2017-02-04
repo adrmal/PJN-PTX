@@ -1,0 +1,77 @@
+#!/usr/bin/python2
+# -*- coding: utf-8 -*-
+import urllib2
+import sys
+import re
+
+def getPersonName(consoleInput):
+	try:
+		consoleInput = consoleInput.replace("?", "")
+		name = re.findall(
+			"(?:(?:P|p)owiedz(?: mi(?:,|)|)|)(?:(?:K|k)iedy(?:| si(?:ę|e)) (?:(?:na|u)rodzi(?:ł|l)(?:|a)(?:| si(?:ę|e))|(?:z|u)mar(?:ł|l)(?:|a)) |"
+			+ "(?:W|w) kt(?:ó|o)rym roku(?:| si(?:ę|e)) (?:(?:na|u)rodzi(?:ł|l)(?:|a)(?:| si(?:ę|e))|(?:z|u)mar(?:ł|l)(?:|a)) |"
+			+ "(?:I|i)le lat temu(?:| si(?:ę|e)) (?:(?:na|u)rodzi(?:ł|l)(?:|a)(?:| si(?:ę|e))|(?:z|u)mar(?:ł|l)(?:|a)) )"
+			+ "(.*)(?:|\\?)", consoleInput)[0]
+		return name.strip()
+	except:
+		return consoleInput.strip()
+
+while sys.stdin:
+	sys.stdout.write("Człowiek:  ")
+	consoleIn = sys.stdin.readline()
+	if(consoleIn.strip() == "q" or consoleIn.strip() == "Q"):
+		sys.exit()
+	
+	try:
+		personName = getPersonName(consoleIn)
+		response = urllib2.urlopen("https://pl.wikipedia.org/wiki/" + personName)
+
+		firstName = personName.split(' ')[0]
+
+		genderBirth = " urodziło się "
+		genderDeath = " i zmarło "
+
+		f = open('meskie.txt', 'r')
+		for line in f:
+			if firstName == line.strip():
+				genderBirth = " urodził się "
+				genderDeath = " i zmarł "
+				break
+		f = open('zenskie.txt', 'r')
+		for line in f:
+			if firstName == line.strip():
+				genderBirth = " urodziła się "
+				genderDeath = " i zmarła "
+				break
+
+		pageSource = response.read()
+
+		lines = pageSource.split('\n')
+
+		dateBirthLine = ""
+		dateDeathLine = ""
+
+		for line in lines:
+			if "miejsce urodzenia" in line:
+				dateBirthLine = lines[lines.index(line)+1]
+			if "miejsce śmierci" in line:
+				dateDeathLine = lines[lines.index(line)+1]
+
+		dayAndMonth = re.findall("([0-9]{1,2} (stycznia|lutego|marca|kwietnia|maja|czerwca|lipca|sierpnia|września|października|listopada|grudnia))", dateBirthLine)[0][0]
+		year = re.findall("[0-9]{3,4}", dateBirthLine)[0]
+
+		sys.stdout.write("Chatbot:   " + personName.strip() + genderBirth + dayAndMonth + " " + year + " r.")
+
+		if dateDeathLine == "":
+			print " i wciąż żyje"
+		else:
+			dayAndMonth = re.findall("([0-9]{1,2} (stycznia|lutego|marca|kwietnia|maja|czerwca|lipca|sierpnia|września|października|listopada|grudnia))", dateDeathLine)[0][0]
+			year = re.findall("[0-9]{3,4}", dateDeathLine)[0]
+		
+			print genderDeath + dayAndMonth + " " + year + " r."
+
+	except urllib2.HTTPError:
+		print "Chatbot:   Taka osoba nie istnieje!"
+
+	except:
+		print "Chatbot:   Nie potrafię znaleźć daty urodzenia lub śmierci!"
