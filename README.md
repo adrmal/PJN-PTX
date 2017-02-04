@@ -12,3 +12,8 @@ Application, which will correct your linguistic errors
 Simple chatbot, with whom you can talk about everything...
 
 ...what he knows
+
+<br>
+
+### Birthdays
+It will tell you, when somebody famous was born or died
