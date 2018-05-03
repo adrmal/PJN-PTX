@@ -1,0 +1,6 @@
+building:
+	thraxmakedep automat.grm
+	make
+
+running:
+	thraxrewrite-tester --noutput=10 -far=automat.far --rules=automaton
