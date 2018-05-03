@@ -12,7 +12,7 @@ public class Main {
 		CorrectorMachine.initializeListOfAllWords();
 		
 		while(cin.hasNextLine()) {
-			String line = CorrectorMachine.getCorrectedText2(cin.nextLine());
+			String line = CorrectorMachine.getCorrectedText(cin.nextLine());
 			System.out.println(line);
 		}
 		

@@ -12,7 +12,7 @@ public class CorrectorMachine {
 
 	private static List<String> listOfAllWords;
 	
-	public static String getCorrectedText2(String text) {
+	public static String getCorrectedText(String text) {
 		text = text.replaceAll(" {2,}", " ");
 		text = text.replaceAll(" +\\.", "\\.");
 		text = text.replaceAll(" +,", ",");
